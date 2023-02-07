@@ -2,8 +2,8 @@ function fibonacci(numero: number): boolean{
     let secuenciaF : number[]=[0];
     let fActual = 1;
     while(fActual<=numero){
-        secuenciaF.push(fActual);
         fActual +=secuenciaF[secuenciaF.length-2]
+        if (fActual=== numero) return true
     }
     if (secuenciaF.includes(numero)) return true
     return false
